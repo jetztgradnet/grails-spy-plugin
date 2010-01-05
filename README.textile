@@ -1,0 +1,17 @@
+h1. Grails Spy plugin
+
+h2. About
+
+The Grails Spy plugin provides some views to inspect Grails internals such as the Spring application context(s), artefacts, etc.
+
+h2. License
+
+The Spy plugin is released under the "Apache License 2.0":http://apache.org/licenses/LICENSE-2.0.txt.
+
+h2. Installation
+
+Simply call @grails install-plugin spy@ to install the OSGi plugin
+
+h2. Usage
+
+Go to @http://localhost:8080/myapp/spy/ and inspect available objects and beans.
