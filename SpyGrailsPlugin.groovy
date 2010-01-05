@@ -13,7 +13,7 @@ class SpyGrailsPlugin {
     def author = "Wolfgang Schell"
     def authorEmail = "grails@jetztgrad.net"
     def title = "Spy into Grails internals"
-    def description = '''Inspect Grails internals such as the Spring application context(s), artefacts, etc. '''
+    def description = '''Inspect Grails internals such as the Spring application context(s), artefacts, etc.'''
 
     // URL to the plugin's documentation
     def documentation = "http://grails.org/plugin/spy"
