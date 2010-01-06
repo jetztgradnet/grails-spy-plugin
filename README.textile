@@ -14,4 +14,4 @@ Simply call @grails install-plugin spy@ to install the OSGi plugin
 
 h2. Usage
 
-Go to @http://localhost:8080/myapp/spy/ and inspect available objects and beans.
+Go to @http://localhost:8080/myapp/spy/@ and inspect available objects and beans.
