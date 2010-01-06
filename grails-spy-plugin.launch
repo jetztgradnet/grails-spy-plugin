@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.springsource.sts.grails.core.launchconfig">
+<stringAttribute key="com.springsource.sts.grails.core.GRAILS_HOME" value="/Users/wolfgang/dev/groovy_grails/grails-1.2.0/"/>
+<stringAttribute key="com.springsource.sts.grails.core.PROJECT_DIR" value="/Users/wolfgang/dev/workspaces/grails/grails-spy-plugin"/>
+<stringAttribute key="com.springsource.sts.grails.core.SCRIPT" value="run-app"/>
+<mapAttribute key="org.eclipse.debug.core.environmentVariables"/>
+<listAttribute key="org.eclipse.jdt.launching.CLASSPATH">
+<listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;runtimeClasspathEntry containerPath=&quot;org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.launching.macosx.MacOSXType/JVM 1.5.0 (MacOS X Default)&quot; path=&quot;2&quot; type=&quot;4&quot;/&gt;&#10;"/>
+<listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;runtimeClasspathEntry externalArchive=&quot;/Users/wolfgang/dev/groovy_grails/grails-1.2.0/lib/groovy-all-1.6.7.jar&quot; path=&quot;3&quot; type=&quot;2&quot;/&gt;&#10;"/>
+<listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;runtimeClasspathEntry externalArchive=&quot;/Users/wolfgang/dev/groovy_grails/grails-1.2.0/dist/grails-bootstrap-1.2.0.jar&quot; path=&quot;3&quot; type=&quot;2&quot;/&gt;&#10;"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.jdt.launching.DEFAULT_CLASSPATH" value="false"/>
+<stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.codehaus.groovy.grails.cli.support.GrailsStarter"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="grails-spy-plugin"/>
+</launchConfiguration>
