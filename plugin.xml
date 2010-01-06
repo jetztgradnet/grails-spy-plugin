@@ -1,0 +1,21 @@
+<plugin name='spy' version='0.1' grailsVersion='1.2.0 &gt; *'>
+  <author>Wolfgang Schell</author>
+  <authorEmail>grails@jetztgrad.net</authorEmail>
+  <title>Spy into Grails internals</title>
+  <description>Inspect Grails internals such as the Spring application context(s), artefacts, etc.</description>
+  <documentation>http://grails.org/plugin/spy</documentation>
+  <resources>
+    <resource>BuildConfig</resource>
+    <resource>DataSource</resource>
+    <resource>SpyUrlMappings</resource>
+    <resource>UrlMappings</resource>
+    <resource>net.jetztgrad.grails.spy.SpyController</resource>
+    <resource>net.jetztgrad.spy.SpyTagLib</resource>
+  </resources>
+  <dependencies>
+    <resolvers>
+      <resolver type='grailsPlugins' name='grailsPlugins' />
+    </resolvers>
+  </dependencies>
+  <behavior />
+</plugin>
