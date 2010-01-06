@@ -1,4 +1,5 @@
 <div id="inspectionBodyObject">
+	<a name="object">&nbsp;</a>
 	<h3>Object</h3>
 	<table>
 		<%--
@@ -17,6 +18,7 @@
 		</tr>
 	</table>
 	
+	<a name="properties">&nbsp;</a>
 	<h3>Properties</h3>
 	<table>
 		<tr>
@@ -26,7 +28,7 @@
 		<g:each var="prop" in="${object?.properties}">
 			<tr>
 				<th>${prop.key}</th>
-				<td><%--${prop.value} --%>
+				<td>
 				<g:render template="value" model="[parentPath: parentPath, path: path, name: prop?.key, value: prop?.value]"/>
 				</td>
 			</tr>

@@ -11,16 +11,7 @@ class SpyController {
 	GrailsApplication grailsApplication
 
 	def inspect = { 
-		def beanStack = session?.beanStack
-		if (!beanStack) {
-			beanStack = []
-			session.beanStack = beanStack
-		}
-		def beans = session?.beans
-		if (!beans) {
-			beans = rootBeans
-			session?.beans = beans
-		}
+		def beans = rootBeans
 		
 		// get bean to be inspected
 		def path = params?.path?.toString()
@@ -31,6 +22,11 @@ class SpyController {
 		if (!path) {
 			// path is not available, try id
 			path = params?.id
+		}
+		
+		if (!path) {
+			// no path, inspect the GrailsApplication object
+			path = 'GrailsApplication'
 		}
 		
 		if (path) {
@@ -49,7 +45,6 @@ class SpyController {
 		[ 
 		 parentPath: parentPath,
 		 path: path,
-		 beanStack: beanStack, 
 		 rootBeans: beans, 
 		 inspected: inspected, 
 		 inspectedName: inspectedName
@@ -59,8 +54,8 @@ class SpyController {
 	def getRootBeans() {
 		[
 		 	GrailsApplication: grailsApplication, 
-		 	ApplicationContext: grailsApplication?.mainContext,
-			//parentContext: grailsApplication?.mainContext?.parent,
+		 	MainApplicationContext: grailsApplication?.mainContext,
+			ParentApplicationContext: grailsApplication?.mainContext?.parent,
 		]
 	}
 	
@@ -112,7 +107,12 @@ class SpyController {
 				}
 			}
 			
-			bean = nextBean
+			if (nextBean != null) {
+				bean = nextBean
+			}
+			else {
+				break
+			}
 		}
 		
 		return bean

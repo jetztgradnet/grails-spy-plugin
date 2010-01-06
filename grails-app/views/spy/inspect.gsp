@@ -20,9 +20,14 @@
 			</div>
 			
 			<div id="beanDetails" class="beanPanel">
-				<g:if test="${inspected}">
+				<g:if test="${path}">
+					<spy:trail path="${path}"/>
+				</g:if>
+				<h2>${inspectedName}</h2> 
+				
+				<g:if test="${inspected != null}">
 					<g:if test="${inspected instanceof org.springframework.context.ApplicationContext }">
-						<g:render template="applicationContext" model="[parentPath: parentPath, path: path, applicationContext:inspected, name:inspectedName]"/>
+						<g:render template="applicationContext" model="['parentPath': parentPath, 'path': path, 'context':inspected, 'name':inspectedName]"/>
 					</g:if>
 					<g:elseif test="${inspected instanceof org.springframework.beans.factory.config.BeanDefinition }">
 						<g:render template="bean" model="[parentPath: parentPath, path: path, beanDefinition:inspected, name:inspectedName]"/>

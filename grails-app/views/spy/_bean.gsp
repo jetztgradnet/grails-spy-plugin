@@ -1,4 +1,5 @@
 <div id="inspectionBodyBean">
+	<a name="bean">&nbsp;</a>
 	<h3>Bean ${name}</h3>
 	<table>
 		<%--
@@ -64,6 +65,8 @@
 			</tr>
 		</g:if>
 	</table>
+	
+	<a name="beanProperties">&nbsp;</a>
 	<h3>Bean Properties</h3>
 	<table><tr><td>
 	<g:render template="value" model="[parentPath: parentPath, path: path, name: null, value: beanDefinition?.propertyValues]"/>
