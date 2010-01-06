@@ -1,5 +1,6 @@
 target
 docs/api
 docs/gapi
+docs/.DS_Store
 web-app/WEB-INF
-
+.DS_Store
