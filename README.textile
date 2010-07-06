@@ -12,6 +12,27 @@ h2. Installation
 
 Simply call @grails install-plugin spy@ to install the OSGi plugin
 
+Grails Spy must be activated in @Config.groovy@:
+
+@grails.plugins.spy.enabled = true@
+
+For security reasons, Spy can be enabled for a single environment, e.g. @development@ only:
+
+<pre>
+    environments {
+        production {
+            grails.serverURL = "http://www.changeme.com"
+        }
+        development {
+            grails.serverURL = "http://localhost:8080/${appName}"
+            grails.plugins.spy.enabled = true
+        }
+        test {
+            grails.serverURL = "http://localhost:8080/${appName}"
+        }
+    }
+</pre>
+
 h2. Usage
 
 Go to @http://localhost:8080/myapp/spy/@ and inspect available objects and beans.
