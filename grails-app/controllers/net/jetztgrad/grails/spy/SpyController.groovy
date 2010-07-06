@@ -10,6 +10,8 @@ class SpyController {
 	
 	GrailsApplication grailsApplication
 
+	static defaultAction = "inspect"
+
 	def inspect = { 
 		def beans = rootBeans
 		
