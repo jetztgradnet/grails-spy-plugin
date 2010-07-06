@@ -1,0 +1,1 @@
+List beans in an ApplicationContext before Properties?
