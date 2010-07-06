@@ -1,4 +1,4 @@
-<plugin name='spy' version='0.1' grailsVersion='1.2.0 &gt; *'>
+<plugin name='spy' version='0.2' grailsVersion='1.2.0 &gt; *'>
   <author>Wolfgang Schell</author>
   <authorEmail>grails@jetztgrad.net</authorEmail>
   <title>Spy into Grails internals</title>
@@ -9,13 +9,10 @@
     <resource>DataSource</resource>
     <resource>SpyUrlMappings</resource>
     <resource>UrlMappings</resource>
+    <resource>net.jetztgrad.grails.spy.SpyFilters</resource>
     <resource>net.jetztgrad.grails.spy.SpyController</resource>
     <resource>net.jetztgrad.spy.SpyTagLib</resource>
   </resources>
-  <dependencies>
-    <resolvers>
-      <resolver type='grailsPlugins' name='grailsPlugins' />
-    </resolvers>
-  </dependencies>
+  <dependencies />
   <behavior />
 </plugin>
