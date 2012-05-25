@@ -53,7 +53,7 @@ class SpyController {
 		]
 	}
 	
-	def getRootBeans() {
+	protected def getRootBeans() {
 		[
 		 	GrailsApplication: grailsApplication, 
 		 	MainApplicationContext: grailsApplication?.mainContext,
@@ -61,7 +61,7 @@ class SpyController {
 		]
 	}
 	
-	def getBeanByPath(Map beans, def path) {
+	protected def getBeanByPath(Map beans, def path) {
 		if (!path) {
 			return null
 		}
@@ -120,7 +120,7 @@ class SpyController {
 		return bean
 	}
 	
-	def getBeanDefinition(AbstractApplicationContext context, String name) {
+	protected def getBeanDefinition(AbstractApplicationContext context, String name) {
 		// lookup bean definition
 		if (context.beanFactory.containsBeanDefinition(name)) {
 			return context.beanFactory.getBeanDefinition(name)

@@ -1,18 +1,24 @@
-<plugin name='spy' version='0.2' grailsVersion='1.2.0 &gt; *'>
+<plugin name='spy' version='0.3' grailsVersion='1.2.0 &gt; *'>
   <author>Wolfgang Schell</author>
   <authorEmail>grails@jetztgrad.net</authorEmail>
   <title>Spy into Grails internals</title>
   <description>Inspect Grails internals such as the Spring application context(s), artefacts, etc.</description>
   <documentation>http://grails.org/plugin/spy</documentation>
+  <type>SpyGrailsPlugin</type>
   <resources>
-    <resource>BuildConfig</resource>
-    <resource>DataSource</resource>
     <resource>SpyUrlMappings</resource>
-    <resource>UrlMappings</resource>
     <resource>net.jetztgrad.grails.spy.SpyFilters</resource>
     <resource>net.jetztgrad.grails.spy.SpyController</resource>
     <resource>net.jetztgrad.spy.SpyTagLib</resource>
   </resources>
+  <repositories>
+    <repository name='grailsCentral' url='http://plugins.grails.org' />
+    <repository name='http://repo.grails.org/grails/plugins' url='http://repo.grails.org/grails/plugins/' />
+    <repository name='http://repo.grails.org/grails/core' url='http://repo.grails.org/grails/core/' />
+    <repository name='grailsCore' url='http://svn.codehaus.org/grails/trunk/grails-plugins' />
+  </repositories>
   <dependencies />
+  <plugins />
+  <runtimePluginRequirements />
   <behavior />
 </plugin>

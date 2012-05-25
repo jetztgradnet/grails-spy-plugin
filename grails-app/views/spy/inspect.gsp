@@ -3,8 +3,10 @@
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 		<meta name="layout" content="main">
 		<title>Grails Spy</title>
-		<g:javascript library="prototype"></g:javascript>
 		<link rel="stylesheet" type="text/css" href="${resource(dir:'css',file:'beans.css')}" />
+		<style type="text/css">
+		  div#beanDetails.beanPanel { width: 95% }
+		</style>
 	</head>
 	<body id="body">
 		<h2>Grails Spy</h2>
